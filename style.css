@@ -369,3 +369,116 @@ footer ul li a{
     cursor: pointer;
   }
 }
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Medium screens (laptops & tablets) */
+@media (max-width: 1200px) {
+  .about .about-container {
+    gap: 5rem;
+  }
+  .info-box h2 {
+    font-size: 3rem;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  header {
+    width: 90%;
+    top: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+  }
+
+  .about .about-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about img,
+  .neon-border {
+    width: 45vw;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  section {
+    padding: 6rem 7%;
+  }
+
+  .info-box h2 {
+    font-size: 2.5rem;
+  }
+  .info-box h3 {
+    font-size: 1.5rem;
+  }
+  .info-box span {
+    font-size: 1.4rem;
+  }
+
+  .about img,
+  .neon-border {
+    width: 60vw;
+  }
+
+  .project-card img {
+    width: 60vw;
+  }
+
+  .input-box input {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .about img,
+  .neon-border {
+    width: 70vw;
+  }
+
+  .info-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .input-box input {
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+  }
+}
